@@ -1,0 +1,16 @@
+[project]
+name = "rapikan-file"
+version = "1.0.0"
+description = "Pemilah file otomatis untuk Android"
+requires-python = ">=3.10"
+dependencies = ["flet==0.28.3", "certifi"]
+
+[tool.flet]
+product = "Rapikan File"
+org = "com.malik"
+company = "Malik"
+
+[tool.flet.android.permission]
+"android.permission.READ_EXTERNAL_STORAGE" = true
+"android.permission.WRITE_EXTERNAL_STORAGE" = true
+"android.permission.MANAGE_EXTERNAL_STORAGE" = true
